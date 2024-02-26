@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        border: 1px solid #374151;
+        width: 320px;
+        border-radius: 0.75rem;
+        background-color: rgba(17, 24, 39, 1);
+        padding: 2.5rem;
+        color: rgba(243, 244, 246, 1);
+        margin: 0 auto;
+        margin-top: 145px;
+      }
+
+      .container h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+      }
+
+      .form-control {
+        margin-top: 1.5rem;
+      }
+
+      .form-control label {
+        display: block;
+        color: rgba(156, 163, 175, 1);
+        margin-bottom: 4px;
+      }
+
+      .form-control input {
+        max-width: 285px;
+        width: 100%;
+        border-radius: 0.375rem;
+        border: 1px solid rgba(55, 65, 81, 1);
+        outline: 0;
+        background-color: rgba(17, 24, 39, 1);
+        padding: 0.75rem 1rem;
+        color: rgba(243, 244, 246, 1);
+      }
+
+      .form-control input:focus {
+        border-color: rgba(167, 139, 250);
+      }
+
+      .btn {
+            border: 1px solid #374151;
+            width: 25em;
+            height: 3em;
+            border-radius: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background: #1C1A1C;
+            cursor: pointer;
+            transition: all 450ms ease-in-out;
+        }
+
+      
+        .text {
+            font-weight: 600;
+            color: #AAAAAA;
+            font-size: medium;
+        }
+
+        .btn:hover {
+            background: linear-gradient(0deg, #A47CF3, #683FEA);
+            box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+            inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+            0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+            0px 0px 180px 0px #9917FF;
+            transform: translateY(-2px);
+        }
+
+        .btn:hover .text {
+            color: white;
+        }
+        .btn:hover .sparkle {
+            fill: white;
+            transform: scale(1.2);
+        }
+      .signup {
+        text-align: center;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: rgba(156, 163, 175, 1);
+        margin-top: 1rem; /* Adding margin at the bottom */
+      }
+
+      .signup a {
+        color: rgba(243, 244, 246, 1);
+        text-decoration: none;
+      }
+
+      .signup a:hover {
+        text-decoration: underline rgba(167, 139, 250, 1);
+      }
+    </style>
+  </head>
+  <body style="background-color: rgba(38, 50, 56, 1);">
+    <div class="container">
+      <h1>Please Login!</h1>
+      <form action="dashboard.html" class="form">
+        <div class="form-control">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-control">
+            <button type="submit" class="btn">
+                <span class="text">Login</span>
+            </button>
+        </div>
+      </form>
+      <div class="signup">
+        Don't have an account? <a href="register.html">Sign up</a>
+      </div>
+    </div>
+  </body>
+</html>
